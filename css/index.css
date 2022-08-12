@@ -189,6 +189,9 @@ a {
 .home .intro p {
   padding: 0 15px;
 }
+.home img[alt~=header_img] {
+  border-radius: 5px;
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -224,6 +227,20 @@ a {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #22283A;
+  color: white;
+  font-family: "Russo One", sans-serif;
+  padding: 8px 16px;
+  width: fit-content;
+  font-size: 1.7rem;
+  border-radius: 6px;
+}
+.home .walk .walk-text .btn:not([disabled]):hover {
+  background-color: white;
+  color: #22283A;
+  border: solid #22283A 2px;
 }
 .home .walk .walk-img {
   width: 46%;
