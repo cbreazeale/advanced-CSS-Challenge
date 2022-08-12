@@ -1,2 +1,7 @@
 // Mediaqueries here
 @use './variables' as *;
+@mixin mobile {
+    @media screen and (max-width: $phone-width) {
+        @content
+    }
+}
