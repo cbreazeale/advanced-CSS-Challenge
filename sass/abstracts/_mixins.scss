@@ -1,20 +1,28 @@
 // Mixins here
 @use './variables' as *;
 
-@mixin button ($background-color, $color)  {
-    background-color: $btn-bg-color;
-    color: white;
-    font-family: 'Russo One', sans-serif;
-    padding: 8px 16px;
-    width: fit-content;
-    font-size: 1.7rem;
-    border-radius: 6px;
+@mixin button ($background-color, $color) {
+  background-color: $btn-bg-color;
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  padding: 8px 16px;
+  width: fit-content;
+  font-size: 1.7rem;
+  border-radius: 6px;
 }
 
 @mixin hover-btn {
-    &:not([disabled]):hover {
-        @content;
-      }
-    }
+  &:not([disabled]):hover {
+    @content;
+  }
+}
 
+@mixin mobile-btn {
+  @content;
+}
 
+@mixin mobile-btn-hover {
+  &:not([disabled]):hover {
+    @content;
+  }
+}
