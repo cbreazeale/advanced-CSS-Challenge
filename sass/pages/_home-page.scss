@@ -65,6 +65,7 @@
       .btn {
         @include button($btn-bg-color,white);
         @include hover-btn {
+          padding: 6px 16px;
           background-color: white;
           color: $btn-bg-color;
           border: solid $btn-bg-color 2px;

@@ -238,6 +238,7 @@ a {
   border-radius: 6px;
 }
 .home .walk .walk-text .btn:not([disabled]):hover {
+  padding: 6px 16px;
   background-color: white;
   color: #22283A;
   border: solid #22283A 2px;
